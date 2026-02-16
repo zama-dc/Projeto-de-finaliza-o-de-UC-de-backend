@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Termos de Uso</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f4f4f4;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      color: #333;
+    }
+
+    .sidebar-menu {
+      padding-top: 2rem;
+    }
+
+    .nav-pills .nav-link {
+      border-radius: 0;
+      border-left: 4px solid transparent;
+      background-color: transparent;
+      color: #555;
+      font-size: 14px;
+      text-align: left;
+      padding: 12px 20px;
+      transition: all 0.2s;
+    }
+
+    .nav-pills .nav-link.active {
+      background-color: #fff;
+      color: #000;
+      font-weight: 600;
+      border-left: 4px solid #000000; 
+    }
+
+    .nav-pills .nav-link:hover:not(.active) {
+      background-color: #e9e9e9;
+    }
+
+    .content-container {
+      background-color: #fff;
+      border-radius: 4px;
+      padding: 50px;
+      margin-top: 2rem;
+      min-height: 600px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+
+    h2 { font-size: 28px; font-weight: 500; margin-bottom: 10px; }
+    .update-meta { color: #777; font-size: 14px; margin-bottom: 40px; }
+    
+    .terms-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .terms-list li {
+      padding: 30px 0;
+    }
+
+    .terms-list strong {
+      display: block;
+      color: #000;
+      margin-bottom: 6px;
+    }
+
+    .warning-box {
+      background-color: #fff5f5;
+      border-left: 4px solid #dc3545;
+      padding: 15px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="row">
+    
+    <div class="col-md-3 sidebar-menu">
+      <div class="nav flex-column nav-pills" role="tablist">
+        <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#tab-1" type="button">Termos de uso</button>
+        <button class="nav-link" data-bs-toggle="pill" data-bs-target="#tab-2" type="button">Propriedade Intelectual</button>
+        <button class="nav-link" data-bs-toggle="pill" data-bs-target="#tab-3" type="button">Atividades Proibidas</button>
+        <button class="nav-link" id="privacidade" data-bs-toggle="pill" data-bs-target="#tab-4" type="button">Política de Privacidade</button>
+        <button class="nav-link" id="termos" data-bs-toggle="pill" data-bs-target="#tab-5" type="button">Cláusula de rescisão</button>
+      </div> 
+    </div>
+
+    <div class="col-md-9">
+      <div class="content-container">
+        <div class="tab-content">
+
+          <!-- TERMOS DE USO -->
+          <div class="tab-pane fade show active" id="tab-1">
+            <h2>Termos de Uso</h2>
+            <p class="update-meta">Atualizados em 07 de janeiro de 2026</p>
+
+            <ul class="terms-list">
+              <li>
+                Ao acessar ou utilizar esta plataforma, você declara que leu, compreendeu e concorda integralmente com estes Termos de Uso.
+                Caso não concorde com qualquer condição aqui descrita, você não deve utilizar o site.
+              </li>
+
+              <li>
+                <strong>Finalidade da plataforma</strong>
+                Este site é um espaço para o envio e compartilhamento de mensagens, desabafos e textos pessoais, muitas vezes não enviados aos seus destinatários originais.
+                O conteúdo publicado reflete experiências individuais e não representa a opinião da plataforma.
+              </li>
+
+              <li>
+                <strong>Alterações dos Termos</strong>
+                Reservamo-nos o direito de alterar estes Termos a qualquer momento, sendo responsabilidade do usuário verificá-los periodicamente.
+              </li>
+            </ul>
+          </div>
+
+          <!-- PROPRIEDADE INTELECTUAL -->
+          <div class="tab-pane fade" id="tab-2">
+            <h2>Propriedade Intelectual</h2>
+            <p class="update-meta">Atualizados em 07 de janeiro de 2026</p>
+
+            <ul class="terms-list">
+              <li>
+                <strong>Conteúdo do usuário</strong>
+                Ao publicar qualquer mensagem ou texto, o usuário declara ser o legítimo autor do conteúdo ou possuir autorização para publicá-lo.
+              </li>
+
+              <li>
+                <strong>Licença de uso</strong>
+                O usuário concede à plataforma uma licença gratuita, irrevogável, não exclusiva e por prazo indeterminado para armazenar, exibir e divulgar o conteúdo dentro do site,
+                inclusive após a exclusão da conta.
+              </li>
+
+              <li>
+                <strong>Ativos da plataforma</strong>
+                O nome, logotipo, identidade visual, layout e código-fonte são protegidos por direitos autorais e não podem ser reproduzidos sem autorização prévia.
+              </li>
+            </ul>
+          </div>
+
+          <!-- ATIVIDADES PROIBIDAS -->
+          <div class="tab-pane fade" id="tab-3">
+            <h2>Atividades Proibidas</h2>
+            <p class="update-meta">Atualizados em 07 de janeiro de 2026</p>
+
+            <ul class="terms-list">
+              <li>
+                <strong>Conteúdo proibido</strong>
+                É proibido publicar conteúdo ilegal, ofensivo, discriminatório, difamatório, que incentive violência, ódio ou viole direitos de terceiros.
+              </li>
+
+              <li>
+                <strong>Responsabilidade</strong>
+                O usuário é integralmente responsável pelo conteúdo que publica. A plataforma não realiza validação prévia das mensagens.
+              </li>
+            </ul>
+
+            <div class="warning-box">
+              <strong class="text-danger">Aviso:</strong>
+              O descumprimento destas regras poderá resultar na suspensão ou exclusão da conta.
+            </div>
+          </div>
+
+          <!-- PRIVACIDADE -->
+          <div class="tab-pane fade" id="tab-4">
+            <h2>Política de Privacidade</h2>
+            <p class="update-meta">Atualizados em 07 de janeiro de 2026</p>
+
+            <ul class="terms-list">
+              <li>
+                <strong>Coleta de dados</strong>
+                Coletamos apenas os dados necessários para funcionamento da conta, como nome de usuário, e-mail e senha criptografada.
+              </li>
+
+              <li>
+                <strong>Exclusão de conta</strong>
+                O usuário pode solicitar a exclusão de sua conta a qualquer momento. No entanto, as mensagens publicadas não serão apagadas e permanecerão armazenadas de forma permanente.
+              </li>
+
+              <li>
+                <strong>LGPD</strong>
+                O tratamento de dados ocorre em conformidade com a Lei nº 13.709/2018 (Lei Geral de Proteção de Dados).
+              </li>
+            </ul>
+          </div>
+
+          <!-- RESCISÃO -->
+          <div class="tab-pane fade" id="tab-5">
+            <h2>Cláusula de Rescisão</h2>
+            <p class="update-meta">Atualizados em 07 de janeiro de 2026</p>
+
+            <ul class="terms-list">
+              <li>
+                <strong>Encerramento de conta</strong>
+                A conta pode ser encerrada pelo usuário ou pela plataforma em caso de violação destes Termos.
+                A exclusão da conta não implica na remoção do conteúdo publicado.
+              </li>
+
+              <li>
+                <strong>Legislação aplicável</strong>
+                Estes Termos são regidos pelas leis da República Federativa do Brasil.
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+        <!-- SETA QUE VOLTA PARA CIMA -->
+        <div class="fixed-button">
+          <i class="fas fa-arrow-up"></i>
+        </div>
+
+<!-- ÍCARO - LIBRAS -->
+<div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+
+<script src="../js/scrollToTopButton.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

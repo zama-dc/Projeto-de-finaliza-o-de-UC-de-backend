@@ -1,0 +1,558 @@
+*{
+    margin: 0; padding: 0;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+#nav-bar{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar{
+   /*  background-image: linear-gradient(to right, #8d1030,#800020); */
+    background-color: transparent;
+    padding: 0 !important;
+}
+
+/* .navbar-brand img{
+    height: 80px;
+    padding-left: 20px;
+} */
+
+.navbar-nav li{
+    padding: 0 10px;
+}
+
+.navbar-nav li a{
+    color: #000000 !important;
+    font-weight: 600;
+    /* float: right; */
+ /*    text-align: left; */
+}
+
+.navbar-toggler{
+    box-shadow: none !important;
+}
+
+.nav-link-btn{
+    display: inline-block; 
+    text-decoration: none; 
+    /* background-color: #fff;  */
+    color: #800020; 
+   /*  border-radius: 20px; */
+    padding: 5px 25px;
+    text-align: center;
+    font-weight: bold;
+    transition: 0.3s;
+    border-radius: .25rem;
+
+/*     border-radius: 20px;
+    padding: 3px;
+    width: 60px; */
+}
+
+/* .nav-link-btn:hover{
+    background-color: #f0f0f0;
+    color: #8d1030;
+    transform: scale(1.01); 
+
+} */
+
+/* BANNER */
+#banner{
+    background-image: linear-gradient(to right, #8d1030,#800020);
+    color: #fff;
+    padding-top: 5%;/* aumentar isso se quiser que a parte azul fique maior(inicialmente 5%)*/
+}
+
+.title{
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 100px;
+    font-family: 'Google Sans';
+    font-weight: 550;
+}
+
+/* .login{
+    border-radius: 20px;
+    padding: 6px;
+    width: 107px;
+} */
+
+
+.signup {
+    display: inline-block; /* Faz o link respeitar altura/largura */
+    text-decoration: none; /* Remove sublinhado */
+    background-color: #fff; 
+    color: #800020;
+    border-radius: 0px;
+    padding: 10px 25px;    /* Aumentei um pouco para ficar mais bonito */
+    width: auto;           /* 'auto' é melhor que fixo para o texto caber */
+    min-width: 120px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: transform 0.4s, background 0.3s;
+}
+
+.signup:hover {
+    background-color: #e0e0e0;
+    color: #000;
+    transform: scale(1.02); /* Efeito de zoom leve ao passar o mouse */
+}
+
+
+.img-fluid{
+    height: 90%;
+}
+
+
+/* CITAÇÃO */
+.container-quote{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    /* padding: 50px 0; */
+}
+
+.left-quote {
+    width: 90px;
+    display: block;
+    margin-left: -7%;  /* Empurra as aspas para a esquerda (saindo da div) */
+    margin-right: auto; 
+    margin-bottom: 20px;
+    margin-top: 14%;/* 14 */
+}
+
+.right-quote {
+    width: 90px;
+    display: block;
+    margin-left: auto;
+    margin-right: -7%; /* Empurra ss aspas para a direita (saindo da div) */
+    margin-top: 20px;
+}
+
+.author {
+    text-align: right;
+    padding-right: 9%;
+    margin-top: 10px;
+    text-transform: none !important;
+}
+
+
+/* PASSO A PASSO */
+#services{
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
+
+.service-img{
+    width: 60px;
+    height: 60px;
+    margin-top: 20px;
+}
+
+.services{
+    padding: 20px;
+}
+
+.step-box h4{
+    padding: 5px;
+    margin-top: 25px;
+    text-transform: uppercase !important;  /* NÃO ESTÁ FUNCIONANDO!!!! */  
+    font-weight: bold;
+}
+
+/* SOBRE NÓS */
+#about-us{
+/*     background-color: #f8f9fa;*/
+    padding-bottom: 50px;
+    padding-top: 50px;
+    padding: 80px 0;
+}
+
+#about-us .title{
+    margin-bottom: 50px;
+}
+
+.about-title{
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 8%;
+}
+
+.text-about-us {
+    font-size: 20px;
+    line-height: 2.0; /* Melhora a leitura do texto longo */   /* INCIALMENTE 1.6 */
+    word-wrap: break-word; /* Força a quebra de palavras muito longas */
+    overflow-wrap: break-word;
+    text-align: justify; /* Opcional: deixa as bordas alinhadas */
+    
+}
+
+.idosa-img {
+    height: auto;    /* Impede que a foto estique e sobreponha o texto */
+    border-radius: 18px;
+    width: 420px;
+    margin-left: 10%;
+}
+
+#about-us .btn-primary{
+    box-shadow: none;
+    padding: 8px 25px;
+    border: none;
+    border-radius: 0px;
+    margin-top: 57px;
+    background-image: linear-gradient(to right, #8D9EC6, #7ca4ff);    
+}
+
+
+/* ESTATÍSTICAS */
+#stats{
+    background-color: #f8f9fa;
+    padding: 80px 0;
+}
+
+.stats-grid {
+    display: grid;
+    /* Cria 3 colunas de tamanhos iguais */
+    grid-template-columns: repeat(3, 1fr); 
+    /* Cria um espaço de 30px entre as colunas e linhas */
+    gap: 30px; 
+    text-align: center;
+    padding: 40px 0;
+}
+
+.stat-item {
+    background: #fff; /* Opcional: um fundo branco para cada item */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05); /* Sombra leve para dar profundidade */
+}
+
+.stat-item i {
+    font-size: 3rem;
+    color: #7ca4ff;
+    margin-bottom: 15px;
+}
+
+.stat-item .number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    display: block;
+}
+
+/* Responsividade: No celular, vira 1 coluna só */
+@media (max-width: 768px) {
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* RODAPÉ */
+#footer{
+/*     background-color: #4A5D23;
+ */}
+
+.footer-link {
+    color: #f8f9fa;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+    color: #0d6efd;
+}
+
+.social-icon {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    display: inline-block;
+    margin: 0 8px;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: translateY(-3px);
+    color: #fff;
+}
+
+
+
+/* A section precisa ser relative para a imagem não fugir dela */
+#faq {
+    position: relative;
+    z-index: 1;
+}
+
+.velho-container {
+    position: absolute;
+    top: 0;             /* Alinha no topo da section FAQ */
+    left: 31%;          /* Move para o centro */
+    transform: translate(-50%, -50%); /* O segredo: sobe 50% da altura da própria imagem */
+    width: 100%;
+    pointer-events: none; /* Evita que a imagem atrapalhe cliques no accordion */
+}
+
+.img-velho {
+    max-width: 200px;  /* Ajuste o tamanho conforme necessário */
+    height: auto;
+}
+
+
+/* SETA DE VOLTA AO TOPO */
+.fixed-button{
+    position: fixed;/* ao descer a tela a seta vai junto */
+    bottom: 5%;
+    right: 2%;/* vai para a direita */
+    background-color: rgb(127, 127, 127);
+    height: 50px;
+    width: 50px;
+    display: grid;/* centraliza */
+    place-items: center;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    font-size: 1.35rem;/* 1.35rem = 21.6px -> 16px*/
+    cursor: pointer;
+    z-index: 1060;
+    opacity: 0;
+    transform: translateY(-100px);
+    transition: all 2s ease;
+    visibility: hidden;
+}
+
+.fixed-button.show{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+}
+
+/* SEÇÃO DE CONTEÚDO */
+.content-section {
+    max-width: 600px; /* Mantém a largura do texto contida */
+    margin: 50px auto 100px;
+    text-align: center;
+    padding: 0 20px;
+    background-color: var(--white); /* Garante que é branco */
+    position: relative;
+    z-index: 1; /* Garante que o texto fique abaixo da imagem */
+}
+
+.sub-title {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--light-text);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+}
+
+.main-title {
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 8px;
+    margin-bottom: 30px;
+}
+
+.text-block {
+    max-width: 450px;
+    margin: 0 auto;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.text-block p {
+    margin-bottom: 20px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poiret+One&family=Sree+Krushnadevaraya&display=swap');
+
+
+
+
+
+
+
+
+
+
+
+
+.search-wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.search-box {
+    position: relative;/* faz a lupa ficar dentro do input */
+    max-width: 420px;   
+    margin: 30px auto;  
+    display: flex;
+}
+
+.search-box:focus-within {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.search-input {
+    flex: 1;
+    padding: 10px 14px;
+    font-size: 0.95rem;
+}
+
+.search-input:focus {
+ /*  border-color: #b7ff00; */
+  box-shadow: none;
+}
+
+.search-icon {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #666;
+  transition: all 0.3s ease;
+}
+
+.search-box:focus-within .search-icon {
+  color: #007bff;
+}
+
+.suggestions {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: white;
+  border-radius: 15px;
+  margin-top: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.search-box:focus-within .suggestions {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.suggestion-item {
+  padding: 12px 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.suggestion-item:hover {
+  background: #98aec4;
+}
+
+.suggestion-item i {
+  margin-right: 10px;
+  color: #666;
+}
+
+.recent-searches {
+  color: #666;
+  font-size: 0.8rem;
+  padding: 10px 20px;
+  background: #f8f9fa;
+  border-radius: 15px 15px 0 0;
+}
+
+.search-btn {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: #666;
+}
+
+
+
+
+
+.unsent-card {
+  background: #fff;
+  /* border-radius: 12px; */
+  padding: 20px;
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+/*   box-shadow: 0 4px 12px rgba(0,0,0,0.06); */
+  transition: all 0.3s ease;
+  border: 3px solid black;
+}
+
+.unsent-card:hover {
+  transform: translateY(-4px);
+/*   box-shadow: 0 8px 20px rgba(0,0,0,0.1); */
+  
+}
+
+.message {
+  font-size: 1rem;
+  color: #000000;
+  line-height: 1.5;
+  font-size: 26px;
+}
+
+.to {
+  font-size: 0.8rem;
+  color: #000000;
+  font-size: 20px;
+}
+
+.date {
+  font-size: 0.75rem;
+  color: #aaa;
+  text-align: right;
+}
+
+
+
+
+
+.color-dot {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    transition: transform 0.2s;
+}
+.color-dot:hover {
+    transform: scale(1.2);
+    border-color: #000;
+}
+
+
+
+
+
+
+form .btn {
+    border-radius: 0 !important;
+}
+
